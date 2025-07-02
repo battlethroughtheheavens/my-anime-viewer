@@ -1,36 +1,10 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Battle Through the Heavens</title>
-  <style>
-    body {
-      background-color: #f4f4f4;
-      text-align: center;
-      font-family: Arial, sans-serif;
-    }
-    select {
-      margin-top: 30px;
-      padding: 10px;
-      font-size: 16px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Battle Through the Heavens</h1>
-  <label for="chapterSelect">Select Chapter:</label>
-  <select id="chapterSelect" onchange="navigateToChapter()">
-    <option value="chapter1.html">Chapter1</option>
-    <option value="chapter2.html">Chapter2</option>
-
-  </select>
-
-  <script>
-    function navigateToChapter() {
-      var chapter = document.getElementById("chapterSelect").value;
-      window.location.href = chapter;
-    }
-  </script>
-</body>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; URL=chapter1.html" />
+    <title>Redirecting to Chapter 1...</title>
+  </head>
+  <body>
+    <p>If you are not redirected, <a href="chapter1.html">click here</a>.</p>
+  </body>
 </html>
