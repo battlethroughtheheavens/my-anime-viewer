@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,22 +10,27 @@
       text-align: center;
       font-family: Arial, sans-serif;
     }
-    h1 {
+    select {
       margin-top: 30px;
-      color: #333;
-    }
-    img {
-      max-width: 90%;
-      height: auto;
-      margin: 20px auto;
-      display: block;
+      padding: 10px;
+      font-size: 16px;
     }
   </style>
 </head>
 <body>
-  <h1>Battle Through the Heavens – Chapter 1</h1>
-  <img src="Chapter 1-1.JPG" alt="Page 1">
-  <img src="Chapter 1-2.JPG" alt="Page 2">
-  <img src="Chapter 1-3.JPG" alt="Page 3">
+  <h1>Battle Through the Heavens</h1>
+  <label for="chapterSelect">Select Chapter:</label>
+  <select id="chapterSelect" onchange="navigateToChapter()">
+    <option value="chapter1.html">Chapter1</option>
+    <option value="chapter2.html">Chapter2</option>
+
+  </select>
+
+  <script>
+    function navigateToChapter() {
+      var chapter = document.getElementById("chapterSelect").value;
+      window.location.href = chapter;
+    }
+  </script>
 </body>
 </html>
