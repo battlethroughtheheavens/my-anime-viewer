@@ -1,0 +1,41 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+#navButtons {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1000;
+}
+
+#navButtons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+#navButtons button:hover {
+  background-color: #0056b3;
+}
+
+#chapterDropdown {
+  margin: 20px;
+}
