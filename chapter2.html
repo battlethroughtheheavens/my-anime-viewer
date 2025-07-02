@@ -1,14 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Chapter2</title>
+  <title>Chapter 2: Coming of Age Ceremony</title>
   <style>
     body {
       background-color: #f4f4f4;
       text-align: center;
-      font-family: Arial, sans-serif;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+    select {
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 16px;
     }
     img {
       max-width: 90%;
@@ -19,7 +23,20 @@
   </style>
 </head>
 <body>
-  <h1>Chapter2</h1>
+  <h1>Chapter 2: Coming of Age Ceremony</h1>
+
+  <label for="chapterSelect">Select Chapter:</label>
+  <select id="chapterSelect" onchange="navigateToChapter()">
+    <option value="chapter1.html">Chapter 1</option>
+    <option value="chapter2.html" selected>Chapter 2</option>
+  </select>
+
+  <script>
+    function navigateToChapter() {
+      var chapter = document.getElementById("chapterSelect").value;
+      window.location.href = chapter;
+    }
+  </script>
   <img src="chapter2/page1.JPG" alt="Page 1">
   <img src="chapter2/page2.JPG" alt="Page 2">
   <img src="chapter2/page3.JPG" alt="Page 3">
