@@ -40,3 +40,26 @@ img {
 #chapterDropdown {
   margin: 20px;
 }
+
+#koFiButton {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  background-color: #ff5f5f;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#koFiButton img {
+  width: 28px;
+  height: 28px;
+}
